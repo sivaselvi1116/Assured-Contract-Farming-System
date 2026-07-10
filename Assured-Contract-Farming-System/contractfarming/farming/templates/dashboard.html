@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contract Farming Dashboard</title>
+
+    <style>
+        body{
+            background-color:#f0f8ff;
+            font-family:Arial,sans-serif;
+            text-align:center;
+        }
+
+        h1{
+            color:darkgreen;
+            margin-top:30px;
+        }
+
+        .card{
+            width:300px;
+            margin:20px auto;
+            padding:20px;
+            border-radius:15px;
+            color:white;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        .farmer{
+            background-color:green;
+        }
+
+        .buyer{
+            background-color:blue;
+        }
+
+        .contract{
+            background-color:orange;
+        }
+
+        .count{
+            font-size:40px;
+            margin-top:10px;
+        }
+
+        button{
+            padding:12px 25px;
+            font-size:18px;
+            border:none;
+            border-radius:8px;
+            background-color:black;
+            color:white;
+            cursor:pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>Assured Contract Farming System Dashboard</h1>
+
+<div class="card farmer">
+    Total Farmers
+    <div class="count">{{ farmer_count }}</div>
+</div>
+
+<div class="card buyer">
+    Total Buyers
+    <div class="count">{{ buyer_count }}</div>
+</div>
+
+<div class="card contract">
+    Total Contracts
+    <div class="count">{{ contract_count }}</div>
+</div>
+
+<a href="/admin/">
+    <button>Go to Admin Panel</button>
+</a>
+
+</body>
+</html>
