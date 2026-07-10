@@ -1,1 +1,1 @@
-# Smart-Agriculture-Assistant-
+# Assured Contract Farming System for Stable Market Access
